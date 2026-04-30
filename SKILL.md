@@ -1,6 +1,9 @@
 ---
 name: learn-x
-description: A Socratic learning facilitation framework that guides a learner from a vague topic ("I want to learn X") to operational understanding through diagnose-first questioning, single-concept-per-turn pacing, structured A/B/C/D prompts instead of open-ended ones, periodic lock-in reviews, devil's-advocate challenges, and a concrete deliverable at the end. Use this skill whenever the user says things like "教我 X"、"帮我学 Y"、"我想搞懂 Z"、"带我入门..."、"help me learn / understand / get good at ...", or asks to be coached through a topic, concept, tool, framework, skill, or subject area — especially when the topic is complex, multi-layered, or the learner's starting point is unclear. The skill is subject-agnostic (works for programming languages, math, design patterns, domain knowledge, soft skills, tools, etc.) and is self-contained. The final deliverable is tailored to what the learner actually needs (working demo, cheat sheet, mindmap, reflection notes, flashcards), not a fixed format.
+version: 1.0.1
+author: dimayip
+homepage: https://github.com/dimayip/learn-x
+description: A Socratic learning facilitation framework that turns "I want to learn X" into operational understanding via diagnose-first questioning, one-concept-per-turn pacing, A/B/C/D structured prompts, periodic lock-in reviews, devil's-advocate challenges, and a concrete deliverable. Use whenever the learner says "教我 X / 帮我学 Y / 我想搞懂 Z / help me learn / understand / get good at ...". Subject-agnostic and self-contained.
 ---
 
 # Learning X — Socratic Learning Facilitation
