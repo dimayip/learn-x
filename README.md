@@ -1,4 +1,4 @@
-# Learning-X
+# learn-x
 
 <p align="left">
   <a href="./README.md"><b>English</b></a> ·
@@ -208,4 +208,4 @@ Unless noted otherwise in individual files, content in this repository is releas
 
 ## Credits
 
-Authored and maintained by [@bellchen](https://github.com/bellchen). The framework synthesizes ideas from Socratic teaching, cognitive load theory, retrieval practice, and the "harness engineering" pattern of separating *steering* from *execution* — but distilled into rules that are cheap enough to actually follow in a real session.
+Authored and maintained by [@dimayip](https://github.com/dimayip). The framework synthesizes ideas from Socratic teaching, cognitive load theory, retrieval practice, and the "harness engineering" pattern of separating *steering* from *execution* — but distilled into rules that are cheap enough to actually follow in a real session.

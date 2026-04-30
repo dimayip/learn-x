@@ -1,4 +1,4 @@
-# Learning-X
+# learn-x
 
 <p align="left">
   <a href="./README.md">English</a> ·
@@ -6,15 +6,15 @@
 </p>
 
 <p align="left">
-  <a href="https://github.com/bellchen/learning-x/stargazers"><img src="https://img.shields.io/github/stars/bellchen/learning-x?style=flat-square" alt="Stars"></a>
-  <a href="https://github.com/bellchen/learning-x/network/members"><img src="https://img.shields.io/github/forks/bellchen/learning-x?style=flat-square" alt="Forks"></a>
-  <a href="https://github.com/bellchen/learning-x/issues"><img src="https://img.shields.io/github/issues/bellchen/learning-x?style=flat-square" alt="Issues"></a>
-  <a href="./LICENSE"><img src="https://img.shields.io/github/license/bellchen/learning-x?style=flat-square" alt="License"></a>
+  <a href="https://github.com/dimayip/learn-x/stargazers"><img src="https://img.shields.io/github/stars/dimayip/learn-x?style=flat-square" alt="Stars"></a>
+  <a href="https://github.com/dimayip/learn-x/network/members"><img src="https://img.shields.io/github/forks/dimayip/learn-x?style=flat-square" alt="Forks"></a>
+  <a href="https://github.com/dimayip/learn-x/issues"><img src="https://img.shields.io/github/issues/dimayip/learn-x?style=flat-square" alt="Issues"></a>
+  <a href="./LICENSE"><img src="https://img.shields.io/github/license/dimayip/learn-x?style=flat-square" alt="License"></a>
 </p>
 
 > **一个 Socratic 式的学习引导 skill——把"我想学 X"变成可操作的理解，并且每次会话都留下一个你可以带走的成果物。**
 
-`learning-x` 是一套**领域无关**的教练框架，面向 AI 助手（以及希望把学习会话开得更好的人类引导者）。它不"讲课"：先诊断学习者真正的起点，每轮只引入一个概念，用结构化的 A/B/C/D 选择题代替开放式提问，每 3 轮左右做一次 lock-in 回顾，正确答案后再用"魔鬼代言人"追问压一压深度，最后每次会话都以**学习者自己产出的东西**作为结束。
+`learn-x` 是一套**领域无关**的教练框架，面向 AI 助手（以及希望把学习会话开得更好的人类引导者）。它不"讲课"：先诊断学习者真正的起点，每轮只引入一个概念，用结构化的 A/B/C/D 选择题代替开放式提问，每 3 轮左右做一次 lock-in 回顾，正确答案后再用"魔鬼代言人"追问压一压深度，最后每次会话都以**学习者自己产出的东西**作为结束。
 
 无论 X 是一门编程语言、一个数学概念、一个设计模式、一个工具、一个框架、一个领域还是一项软技能，这套框架都适用。
 
@@ -24,7 +24,7 @@
 
 绝大多数学习失败，都是因为**讲得太多、太快**——在学习者还没把新概念接入自己的心智模型之前，信息已经灌完了。传统"直接解释一遍"的互动会让学习者一边点头一边遗忘，48 小时内几乎完全失效。
 
-`learning-x` 的设计只围绕一个视角转换：
+`learn-x` 的设计只围绕一个视角转换：
 
 > **学习者掌舵（负责把事情想明白）。教练执行（只问，不讲）。**
 
@@ -101,7 +101,7 @@ skill 里每一条规则、每一个提问模板、每一步工作流，都是�
 ## 仓库结构
 
 ```
-learning-x/
+learn-x/
 ├── SKILL.md                               # 完整 skill 规范——哲学、规则、工作流
 ├── README.md                              # 英文总览
 ├── README.zh-CN.md                        # （本文件）中文总览
@@ -177,7 +177,7 @@ git clone https://github.com/dimayip/learn-x .codebuddy/skills/learn-x
 
 支持 skill 加载的平台（CodeBuddy / Claude skills 等）：
 
-1. 把整个目录放到平台的 skills 文件夹下（例如 `.codebuddy/skills/learning-x/`）；
+1. 把整个目录放到平台的 skills 文件夹下（例如 `.codebuddy/skills/learn-x/`）；
 2. 当用户的请求匹配 skill 描述（学习、教练、"教我 X" 等）时，agent 会自动加载 `SKILL.md`；
 3. `references/` 下的文件**按需加载**——agent 只在当前对话真正需要详细脚本、问题措辞或特定场景指引时才读。
 
@@ -196,7 +196,7 @@ git clone https://github.com/dimayip/learn-x .codebuddy/skills/learn-x
 
 ## ⭐ Star 历史
 
-[![Star History Chart](https://api.star-history.com/svg?repos=bellchen/learning-x&type=Date)](https://star-history.com/#bellchen/learning-x&Date)
+[![Star History Chart](https://api.star-history.com/svg?repos=dimayip/learn-x&type=Date)](https://star-history.com/#dimayip/learn-x&Date)
 
 ---
 
@@ -208,7 +208,7 @@ git clone https://github.com/dimayip/learn-x .codebuddy/skills/learn-x
 
 ## Credits
 
-由 [@bellchen](https://github.com/bellchen) 设计并维护。融合了 Socratic 教学、认知负荷理论、retrieval practice 以及 "harness engineering" 中"掌舵 / 执行 分离"的思路——压缩成一套**在真实会话里跑得动**的规则集。
+由 [@dimayip](https://github.com/dimayip) 设计并维护。融合了 Socratic 教学、认知负荷理论、retrieval practice 以及 "harness engineering" 中"掌舵 / 执行 分离"的思路——压缩成一套**在真实会话里跑得动**的规则集。
 
 ---
 
