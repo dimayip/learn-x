@@ -145,6 +145,34 @@ skill 规范里明确列了这些反模式，因为这是"好意的会话仍然�
 
 ---
 
+## 安装
+
+通过 [skills.sh](https://skills.sh) 安装（支持 Claude Code / Cursor / Codex / CodeBuddy / OpenCode 等 [50+ 种 agent](https://github.com/vercel-labs/skills#supported-agents)）：
+
+```bash
+# 全局安装 — 所有项目共享
+npx skills add dimayip/learn-x -g -a claude-code
+
+# 项目级安装 — 随仓库提交
+npx skills add dimayip/learn-x -a codebuddy
+
+# 其他 agent：-a 后面换成 cursor / codex / opencode 等
+```
+
+或手动 clone 到 agent 的 skills 目录：
+
+```bash
+# Claude Code（全局）
+git clone https://github.com/dimayip/learn-x ~/.claude/skills/learn-x
+
+# CodeBuddy（项目级）
+git clone https://github.com/dimayip/learn-x .codebuddy/skills/learn-x
+```
+
+兼容 [Agent Skills Specification](https://agentskills.io)。
+
+---
+
 ## 如何在 AI agent 中使用这个 skill
 
 支持 skill 加载的平台（CodeBuddy / Claude skills 等）：

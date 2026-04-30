@@ -6,15 +6,15 @@
 </p>
 
 <p align="left">
-  <a href="https://github.com/bellchen/learning-x/stargazers"><img src="https://img.shields.io/github/stars/bellchen/learning-x?style=flat-square" alt="Stars"></a>
-  <a href="https://github.com/bellchen/learning-x/network/members"><img src="https://img.shields.io/github/forks/bellchen/learning-x?style=flat-square" alt="Forks"></a>
-  <a href="https://github.com/bellchen/learning-x/issues"><img src="https://img.shields.io/github/issues/bellchen/learning-x?style=flat-square" alt="Issues"></a>
-  <a href="./LICENSE"><img src="https://img.shields.io/github/license/bellchen/learning-x?style=flat-square" alt="License"></a>
+  <a href="https://github.com/dimayip/learn-x/stargazers"><img src="https://img.shields.io/github/stars/dimayip/learn-x?style=flat-square" alt="Stars"></a>
+  <a href="https://github.com/dimayip/learn-x/network/members"><img src="https://img.shields.io/github/forks/dimayip/learn-x?style=flat-square" alt="Forks"></a>
+  <a href="https://github.com/dimayip/learn-x/issues"><img src="https://img.shields.io/github/issues/dimayip/learn-x?style=flat-square" alt="Issues"></a>
+  <a href="./LICENSE"><img src="https://img.shields.io/github/license/dimayip/learn-x?style=flat-square" alt="License"></a>
 </p>
 
 > **A Socratic learning facilitation skill that turns "I want to learn X" into operational understanding — plus a tangible artifact you can keep.**
 
-`learning-x` is a subject-agnostic coaching framework for AI assistants (and humans who want to run better learning sessions). Instead of lecturing, it diagnoses where the learner actually stands, introduces concepts one at a time, uses structured A/B/C/D prompts, locks in progress every few turns, challenges correct answers with devil's-advocate follow-ups, and always ends with something the learner has produced.
+`learn-x` is a subject-agnostic coaching framework for AI assistants (and humans who want to run better learning sessions). Instead of lecturing, it diagnoses where the learner actually stands, introduces concepts one at a time, uses structured A/B/C/D prompts, locks in progress every few turns, challenges correct answers with devil's-advocate follow-ups, and always ends with something the learner has produced.
 
 It works whether X is a programming language, a math concept, a design pattern, a tool, a framework, a domain, or a soft skill.
 
@@ -24,7 +24,7 @@ It works whether X is a programming language, a math concept, a design pattern, 
 
 Most learning failures come from **being told too much, too fast**, before the learner has grounded the new concept in their own mental model. Traditional "just explain it" interactions leave the learner nodding along and forgetting everything within 48 hours.
 
-`learning-x` is designed around a single shift:
+`learn-x` is designed around a single shift:
 
 > **Learner steers (making sense). Coach executes (asking, not telling).**
 
@@ -101,7 +101,7 @@ Phase 4 — Artifact           Phase 3 — Milestone loop
 ## Repository layout
 
 ```
-learning-x/
+learn-x/
 ├── SKILL.md                               # The full skill spec — philosophy, rules, workflow
 ├── README.md                              # (this file) overview for humans browsing the repo
 ├── README.zh-CN.md                        # Chinese translation (auto-generated, see below)
@@ -145,11 +145,39 @@ The framework adapts to the learner, not the other way around:
 
 ---
 
+## Install
+
+Via [skills.sh](https://skills.sh) (works for Claude Code, Cursor, Codex, CodeBuddy, OpenCode, and [50+ other agents](https://github.com/vercel-labs/skills#supported-agents)):
+
+```bash
+# Global install — available across all projects
+npx skills add dimayip/learn-x -g -a claude-code
+
+# Project-scoped install — committed with your repo
+npx skills add dimayip/learn-x -a codebuddy
+
+# Other agents: replace -a with your target, e.g. -a cursor / -a codex / -a opencode
+```
+
+Or clone manually into your agent's skills directory:
+
+```bash
+# Example for Claude Code (global)
+git clone https://github.com/dimayip/learn-x ~/.claude/skills/learn-x
+
+# Example for CodeBuddy (project-scoped)
+git clone https://github.com/dimayip/learn-x .codebuddy/skills/learn-x
+```
+
+Compatible with the [Agent Skills Specification](https://agentskills.io).
+
+---
+
 ## How to use this skill with an AI agent
 
 If your agent platform supports skill loading (CodeBuddy, Claude skills, or similar):
 
-1. Place this directory under the platform's skills folder (e.g. `.codebuddy/skills/learning-x/`).
+1. Place this directory under the platform's skills folder (e.g. `.codebuddy/skills/learn-x/`).
 2. The agent loads `SKILL.md` when the user's request matches the skill's description (learning, coaching, "教我 X", etc.).
 3. Reference files under `references/` are loaded **on demand** — the agent pulls them only when it needs the detailed playbook, question phrasings, or pattern guidance for the current moment in the session.
 
@@ -168,7 +196,7 @@ If you're using it as a human facilitator: read `SKILL.md` once to internalize t
 
 ## ⭐ Star History
 
-[![Star History Chart](https://api.star-history.com/svg?repos=bellchen/learning-x&type=Date)](https://star-history.com/#bellchen/learning-x&Date)
+[![Star History Chart](https://api.star-history.com/svg?repos=dimayip/learn-x&type=Date)](https://star-history.com/#dimayip/learn-x&Date)
 
 ---
 
