@@ -1,177 +1,127 @@
-# Diagnose Playbook — The Opening Moves of a Learning Session
+# 诊断手册 — 学习会话的开场动作
 
-This file is your script for the **first 3-10 minutes** of any learning
-session. A bad opening locks in a bad session — you end up either boring
-someone who already knew the material, or burying a beginner under jargon
-they can't catch.
+这份文件是你在任何学习会话**最初 3–10 分钟**的脚本。糟糕的开场锁定糟糕的会话——你最终要么让已经懂了的人无聊，要么用术语把新手埋没。
 
-The cost of spending a few minutes diagnosing is tiny. The cost of skipping
-it is enormous. Do not skip it, even when the learner seems impatient.
-Especially when the learner seems impatient.
+花几分钟诊断的成本很小。跳过它的代价巨大。即使学习者看起来很急也不要跳过。尤其是当学习者看起来很急的时候。
 
 ---
 
-## Why diagnosis matters more than it seems
+## 为什么诊断比看起来更重要
 
-Learners usually can't accurately describe what they already know. Three
-patterns show up constantly:
+学习者通常无法准确描述自己已经知道什么。三种模式反复出现：
 
-1. **Overconfidence at the name level.** "Yeah, I know recursion." Probes
-   reveal they can recite a definition but can't trace a simple call stack.
-2. **Underconfidence at the skill level.** "I don't really know Git." Probes
-   reveal they use it fluently for common cases and just haven't faced rebases.
-3. **Mismatched goal and path.** Learner asks to learn X, but their actual
-   goal is solvable by learning a much smaller Y, or requires a much bigger Z.
+1. **名词层面的过度自信。** "是的，我懂递归。"一探测就发现他们能背定义但追踪不了一个简单的调用栈。
+2. **技能层面的过度自卑。** "我不太会 Git。"一探测就发现他们日常用得很溜，只是没遇到过 rebase。
+3. **目标和路径错位。** 学习者要学 X，但他们真正的目标可以通过学一个小得多的 Y 解决，或者其实需要一个大得多的 Z。
 
-Your job in diagnosis is to surface all three — politely and quickly.
+你在诊断中的任务是——礼貌且快速地——把这三种情况都暴露出来。
 
 ---
 
-## The 4-question opening (use every time)
+## 4 问开场（每次都用）
 
-Ask these in order. Do not batch them into one message — ask, wait, read the
-answer, then ask the next. The *delay* is part of the pedagogy; it signals
-that answers matter.
+按顺序问。不要把它们打包到一条消息里——问一个，等待，阅读答案，然后问下一个。*这个延迟*本身就是教学法的一部分；它传达了"答案很重要"的信号。
 
-### Q1 — Destination
+### Q1 — 目的地
 
-> "What do you want to be able to *do* after we're done? Paint me the
-> concrete scene — who's using it, what are you showing, what does success
-> feel like?"
+> "我们结束之后，你想能*做到*什么？给我描绘一个具体场景——谁在用它，你在展示什么，成功是什么感觉？"
 
-**What you're listening for:**
-- A tangible artifact or capability → good, we can reverse-engineer a path.
-- "I just want to understand it better" → push for why. "Understand it in
-  order to _{what}_?" Unspecified motivation kills follow-through.
-- A destination that's too big for this session → gently scope down. "That's
-  a 10-week road. Which slice would give you the most value this week?"
+**你在倾听什么：**
+- 一个有形的产物或能力 → 很好，我们可以逆向工程出一条路径。
+- "我只是想更好地理解它" → 追问为什么。"理解它是为了*做什么*？" 不明确的动机会杀死后续执行力。
+- 一个对本次会话来说太大的目标 → 温和地缩小范围。"那是一条 10 周的路。这周哪一片对你价值最大？"
 
-### Q2 — Current standing
+### Q2 — 当前位置
 
-> "What's your starting point? What have you already tried, read, watched,
-> or built that's related? Even the half-finished attempts count."
+> "你的起点在哪？你已经尝试、阅读、看过或做过什么相关的东西？即使是半成品的尝试也算。"
 
-**What you're listening for:**
-- Real prior experience → start mid-path, skip basics. Confirm with a micro-probe
-  (Q4) before you commit.
-- Almost nothing → start from first principles, but find at least one analogy
-  from their non-related background.
-- A failed attempt → gold. The failure contains a concrete obstacle you can
-  use as the organizing problem of the session.
+**你在倾听什么：**
+- 真实的先前经验 → 从路径中段开始，跳过基础。在正式跳过之前用微探测（Q4）确认一下。
+- 几乎什么都没有 → 从第一性原理开始，但至少从他们不相关的背景中找一个类比。
+- 一次失败的尝试 → 宝贵。失败中包含一个具体障碍，你可以把它作为本次会话的组织性问题。
 
-### Q3 — Constraints and context
+### Q3 — 约束和上下文
 
-> "How much time do you have for this — today and over the coming weeks?
-> And are you learning this alone, or alongside someone / for a specific
-> project?"
+> "你有多少时间用在这件事上——今天以及接下来几周？你是独自学习，还是和别人一起 / 为一个具体项目学？"
 
-**What you're listening for:**
-- Available time shapes depth. 30 minutes → one concept + one application.
-  Several weeks → full curriculum.
-- Presence of a real project → use it as the running example. Hugely
-  accelerates learning.
-- Isolation → they'll need you to play the role of the peer review. Plan for
-  more Challenge-family questions later.
+**你在倾听什么：**
+- 可用时间决定深度。30 分钟 → 一个概念 + 一个应用。几周 → 完整课程。
+- 有真实项目 → 把它作为贯穿始终的例子。极大加速学习。
+- 独自一人 → 他们需要你扮演同伴审查的角色。计划后续多用 Challenge 族问题。
 
-### Q4 — Micro-probe (the calibration shot)
+### Q4 — 微探测（校准射击）
 
-> "Before we start, humor me with a quick one: _{a concrete question at the
-> level you think they're at}_. No pressure if you don't know — I just want
-> to calibrate where to start."
+> "在我们开始之前，配合我做一个小测试：_{一个你认为处于他们水平的具体问题}_。不知道也没压力——我只是想校准从哪里开始。"
 
-**Construction rules for the probe:**
-- It should be answerable in one or two sentences.
-- It should discriminate: easy if they're past the level, hard if they're
-  below it. Avoid "fair middle" — those tell you nothing.
-- Frame it as calibration, not a test. Always offer the no-pressure exit.
+**构造探测的规则：**
+- 应该能用一两句话回答。
+- 应该有区分度：如果他们已经过了这个水平就很容易，如果低于这个水平就很难。避免"公平的中间值"——那什么都测不出来。
+- 框定为校准，而非测试。总是提供无压力的退出选项。
 
-**What you're listening for:**
-- Fluent answer → advance the starting level one notch; probe again.
-- Hedged or wrong answer → start where they said they were, or one notch
-  lower.
-- "I have no idea" delivered confidently → great, they're self-aware. Trust
-  it and start there.
+**你在倾听什么：**
+- 流利的回答 → 起始水平上调一档；再探测一次。
+- 犹豫或错误的回答 → 从他们说的水平开始，或低一档。
+- 自信地说"我完全不知道" → 很好，他们有自我认知。信任它，从那里开始。
 
 ---
 
-## Interpreting the 4 answers together
+## 综合解读 4 个答案
 
-Once you have all four, spend a moment (silently) synthesizing before you
-respond. The four answers form a picture:
+拿到所有四个答案后，花一点时间（默默地）综合，然后再回应。四个答案形成一幅画面：
 
-| Pattern | What it means | How to open |
-|---|---|---|
-| Big destination + shallow standing + little time | Scope mismatch. | Propose a narrower goal first. Get their consent before proceeding. |
-| Narrow destination + deep standing | They're near the answer. | Skip straight to the missing piece. Don't rehash. |
-| Deep destination + shallow standing + abundant time | Real curriculum needed. | Sketch a 3-7 milestone map, get their buy-in, start milestone 1. |
-| Unclear destination + any standing | Biggest risk — they'll lose motivation mid-way. | Don't teach yet. Instead, make them concrete: "Give me a specific task you'd apply this to." |
+| 模式 | 含义 | 如何开场 |
+|------|------|--------|
+| 大目标 + 浅基础 + 少时间 | 范围错配。 | 先提议一个更窄的目标。取得他们的同意后再继续。 |
+| 窄目标 + 深基础 | 他们离答案很近。 | 直接跳到缺失的那块。不要复习已知的。 |
+| 深目标 + 浅基础 + 充足时间 | 需要真正的课程规划。 | 画一个 3–7 个里程碑的路径图，取得买入，从里程碑 1 开始。 |
+| 不明确的目标 + 任何基础 | 最大风险——他们会中途失去动力。 | 先不教。让他们具体化："给我一个你会应用这个知识的具体任务。" |
 
 ---
 
-## The "map moment" — transition from diagnosis to teaching
+## "地图时刻" — 从诊断过渡到教学
 
-After synthesis, **always** show the learner the path you propose, and ask
-them to confirm or modify. This is non-negotiable.
+综合之后，**永远**把你提议的路径展示给学习者，请他们确认或修改。这是不可协商的。
 
-**Template:**
+**模板：**
 
-> "Okay — based on what you said, here's what I'm thinking:
+> "好——根据你说的，我是这么想的：
 >
-> We'll start with _{first concept}_, because _{reason tied to their Q2 or
-> Q4 answer}_.
-> Then we'll cover _{second}_ and _{third}_.
-> By the end of today, you should be able to _{concrete ability tied to Q1}_.
+> 我们先从 _{第一个概念}_ 开始，因为 _{与他们 Q2 或 Q4 回答相关的原因}_。
+> 然后覆盖 _{第二个}_ 和 _{第三个}_。
+> 今天结束时，你应该能够 _{与 Q1 相关的具体能力}_。
 >
-> Later on, if you want to go deeper, the natural next steps are
-> _{larger topics}_ — but we won't touch those today.
+> 以后如果你想深入，自然的下一步是 _{更大的主题}_ — 但今天不碰它们。
 >
-> Does this order feel right to you, or do you want to adjust?"
+> 这个顺序你觉得对吗，还是想要调整？"
 
-**Why this step matters:**
-1. It gives the learner agency. They become a collaborator, not a passive
-   recipient.
-2. It surfaces mismatches you missed. They'll often say "actually I already
-   know _{first concept}_" — saving you from wasting 10 minutes.
-3. It creates a shared contract. Later, when you say "we're halfway through
-   our plan," the word "plan" means something.
+**为什么这一步重要：**
+1. 它给学习者主动权。他们变成协作者，而非被动接收者。
+2. 它暴露你遗漏的错配。他们经常会说"其实 _{第一个概念}_ 我已经会了"——帮你省下 10 分钟。
+3. 它建立一个共享契约。之后当你说"我们走到计划的一半了"，"计划"这个词才有意义。
 
 ---
 
-## Common opening mistakes
+## 常见开场错误
 
-**Mistake 1 — Starting without Q1.** You end up teaching a tangent beautifully,
-then realize at minute 30 that it doesn't serve the learner's actual goal.
-Catastrophic.
+**错误 1 — 不问 Q1 就开始。** 你最终优美地教了一个切线方向的东西，然后在第 30 分钟才发现它不服务于学习者的实际目标。灾难性。
 
-**Mistake 2 — Accepting "I don't know anything" at face value.** Most learners
-underestimate themselves. Always probe with Q4 before committing to
-beginner-level material.
+**错误 2 — 接受"我什么都不知道"的表面含义。** 大多数学习者低估自己。总是在确定用入门材料之前用 Q4 探测一下。
 
-**Mistake 3 — Skipping the map moment.** You jump from diagnosis to teaching
-and the learner has no sense of where they are or where they're going. They
-disengage subtly and you don't notice until they stop asking questions.
+**错误 3 — 跳过地图时刻。** 你从诊断直接跳到教学，学习者对自己在哪里、要去哪里完全没有感觉。他们会微妙地脱离参与，而你直到他们不再提问时才注意到。
 
-**Mistake 4 — Batching all four questions in one message.** The learner then
-answers in one paragraph, often missing Q3 or Q4 entirely. Worse, they don't
-feel heard. One question at a time, reading each answer carefully.
+**错误 4 — 把四个问题打包到一条消息。** 学习者于是在一个段落里回答，经常漏掉 Q3 或 Q4。更糟的是，他们没有感觉到被认真倾听。一次一个问题，仔细阅读每个答案。
 
-**Mistake 5 — Using the probe to show off.** If Q4 is designed to trip the
-learner, you've poisoned the session. The probe is for *you* — to calibrate —
-and should be framed as such.
+**错误 5 — 用探测来炫技。** 如果 Q4 是为了难倒学习者，你就毒害了这次会话。探测是给*你*用的——用来校准——应该如此框定。
 
 ---
 
-## When diagnosis should loop
+## 何时重新诊断
 
-Diagnosis isn't only for session openings. Re-diagnose whenever:
+诊断不仅仅用于会话开场。在以下情况重新诊断：
 
-- The learner seems lost for two turns in a row (their prior level was
-  probably over-estimated).
-- The learner seems bored or ahead (their prior level was under-estimated).
-- The learner's goal shifts mid-session ("actually, what I really want is...").
-- You transition to a major new section.
+- 学习者连续两轮看起来迷失了（他们的先前水平可能被高估了）。
+- 学习者看起来无聊或超前了（他们的先前水平可能被低估了）。
+- 学习者的目标在会话中途发生了变化（"其实，我真正想要的是..."）。
+- 你过渡到一个全新的大板块。
 
-A re-diagnosis can be short — just one targeted probe — but it should happen.
-The most common failure mode of a long learning session is: the learner's
-understanding drifted away from the teacher's model of it, and neither
-noticed until too late.
+重新诊断可以很短——只需一个精准的探测——但它应该发生。长学习会话最常见的失败模式是：学习者的理解偏离了教练对它的模型，双方都没注意到直到为时已晚。

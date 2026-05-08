@@ -1,8 +1,8 @@
 # learn-x
 
 <p align="left">
-  <a href="./README.md"><b>English</b></a> ·
-  <a href="./README.zh-CN.md">简体中文</a>
+  <a href="./README.md"><b>简体中文</b></a> ·
+  <a href="./README-en.md">English</a>
 </p>
 
 <p align="left">
@@ -12,200 +12,194 @@
   <a href="./LICENSE"><img src="https://img.shields.io/github/license/dimayip/learn-x?style=flat-square" alt="License"></a>
 </p>
 
-> **A Socratic learning facilitation skill that turns "I want to learn X" into operational understanding — plus a tangible artifact you can keep.**
+> **一个 Socratic 式的学习引导 skill——把"我想学 X"变成可操作的理解，并且每次会话都留下一个你可以带走的成果物。**
 
-`learn-x` is a subject-agnostic coaching framework for AI assistants (and humans who want to run better learning sessions). Instead of lecturing, it diagnoses where the learner actually stands, introduces concepts one at a time, uses structured A/B/C/D prompts, locks in progress every few turns, challenges correct answers with devil's-advocate follow-ups, and always ends with something the learner has produced.
+`learn-x` 是一套**领域无关**的教练框架，面向 AI 助手（以及希望把学习会话开得更好的人类引导者）。它不"讲课"：先诊断学习者真正的起点，每轮只引入一个概念，用结构化的 A/B/C/D 选择题代替开放式提问，每 3 轮左右做一次 lock-in 回顾，正确答案后再用"魔鬼代言人（devil's advocate）"追问压深度，最后每次会话都以**学习者自己产出的东西**作为结束。
 
-It works whether X is a programming language, a math concept, a design pattern, a tool, a framework, a domain, or a soft skill.
-
----
-
-## Why this skill exists
-
-Most learning failures come from **being told too much, too fast**, before the learner has grounded the new concept in their own mental model. Traditional "just explain it" interactions leave the learner nodding along and forgetting everything within 48 hours.
-
-`learn-x` is designed around a single shift:
-
-> **Learner steers (making sense). Coach executes (asking, not telling).**
-
-Every rule, question template, and workflow step in the skill is there to keep the learner's mind **active rather than passive**.
+无论 X 是一门编程语言、一个数学概念、一个设计模式、一个工具、一个框架、一个领域还是一项软技能，这套框架都适用。
 
 ---
 
-## When to use it
+## 为什么需要这个 skill
 
-Trigger this skill whenever a user says things like:
+绝大多数学习失败，都是因为**讲得太多、太快**——在学习者还没把新概念接入自己的心智模型之前，信息已经灌完了。传统"直接解释一遍"的互动会让学习者一边点头一边遗忘，48 小时内几乎完全失效。
+
+`learn-x` 的设计只围绕一个视角转换：
+
+> **学习者掌舵（负责把事情想明白）。教练执行（只问，不讲）。**
+
+skill 里每一条规则、每一个提问模板、每一步工作流，都是为了让学习者的大脑**保持主动**而不是被动接收。
+
+---
+
+## 何时使用
+
+当用户说出类似下面这些话时，就该触发本 skill：
 
 - "教我 X" / "帮我学 Y" / "我想搞懂 Z" / "带我入门 ..."
 - "help me learn / understand / get good at ..."
-- "can you coach me through ...?"
-- "I've been trying to wrap my head around ..."
+- "能不能带我过一遍 ...?"
+- "我一直没搞清楚 ..."
 
-It shines especially when:
+尤其适用于：
 
-- the topic is complex or multi-layered,
-- the learner's starting point is unclear,
-- or past attempts to "just read the docs" haven't stuck.
+- 主题复杂、多层次
+- 学习者的起点不清楚
+- 之前"看看文档就懂了"没能奏效
 
-It is **not** the right skill for pure fact lookups ("what year was Python released?") or for doing the work *for* the learner (write my code, debug my bug). Those should route to other skills.
-
----
-
-## Core philosophy — the 4 active layers
-
-Every turn of dialogue should activate all four layers simultaneously. A turn that only asks questions (L3) without anchoring to the goal (L1) or producing anything (L4) causes the session to drift.
-
-| Layer | Role | Example in a turn |
-|-------|------|-------------------|
-| **L1 · Anchor** | Keep sight of the goal + a reference exemplar | *"Remember — you said you want to build X by next month. This concept serves that."* |
-| **L2 · Discipline** | Enforce tempo: diagnose-first, one-concept, lock-ins, devil's advocate | *"Before I explain — what do you *think* it does?"* |
-| **L3 · Tactics** | Socratic moves: prime, hypothesize, verify, apply, reflect, challenge | *"Pick A / B / C — which matches your intuition?"* |
-| **L4 · Artifact** | Produce something tangible every few turns | *"Now write a 5-line version in your own words."* |
+**不适用场景**：纯事实查询（"Python 是哪年发布的？"）、或者需要 Agent 直接替学习者干活（写代码、修 bug）。这些应该路由到其他 skill。
 
 ---
 
-## The 5 ironclad rules
+## 核心哲学——每轮必须同时激活的 4 层
 
-1. **Diagnose before teaching.** Open with questions about *purpose*, *prior impression*, and *adjacent knowledge*. Never open with content.
-2. **One new concept per turn.** Queue additional concepts instead of stacking. Pair every concept with a <3-minute micro-task.
-3. **Prefer structured choices over open questions.** Replace "what would you use?" with "A / B / C — which, and why?". Always leave room for the learner to pick D.
-4. **Lock-in review every ~3 turns.** Explicitly recap what's been nailed and what's next. Specific and short beats vague.
-5. **Devil's advocate after correct answers.** Correctness is cheap; depth is expensive. Push on one assumption before moving on.
+每一轮对话都应该**同时**激活以下 4 层。只问问题（L3）却不锚定目标（L1）、也不产出任何东西（L4）的对话，会让整场会话逐渐漂移。
 
-Full reasoning for each rule lives in [`SKILL.md`](./SKILL.md).
+| 层 | 作用 | 当轮示例 |
+|----|------|--------|
+| **L1 · 锚点（Anchor）** | 保持对目标 + 参照样例的视野 | *"别忘了你说下个月要做出 X，这个概念就是为这件事服务的。"* |
+| **L2 · 纪律（Discipline）** | 控制节奏：先诊断、单概念、lock-in、魔鬼代言人 | *"先别急着看我解释——你**以为**它是干嘛的？"* |
+| **L3 · 战术（Tactics）** | Socratic 动作：prime / hypothesize / verify / apply / reflect / challenge | *"A / B / C 选一个——哪个更符合你的直觉？"* |
+| **L4 · 产物（Artifact）** | 每几轮就要产出一件具体的东西 | *"用你自己的话写一个 5 行版本。"* |
 
 ---
 
-## The 4-phase workflow
+## 5 条硬纪律
+
+1. **先诊断，再教学。** 开场先问**目的、先前印象、相邻知识**。**绝不**用内容开场。
+2. **每轮只引入一个新概念。** 多出来的概念进队列，不要堆叠。每个概念都配一个小于 3 分钟的微任务。
+3. **结构化选择优先于开放式提问。** 用"A / B / C——选哪个，为什么？"替代"你会怎么做？"。永远给学习者留一个"选 D（自己的答案）"的空间。
+4. **每 ~3 轮做一次 lock-in 回顾。** 显式复盘：已经锁住的 + 下一步要做的。具体且简短，胜过含糊的大回顾。
+5. **正确答案之后要用魔鬼代言人追问。** 答对很便宜，深度才贵。别停在"答对了"，再挤一个假设出来。
+
+每条规则的完整理由见 [`SKILL.md`](./SKILL.md)。
+
+---
+
+## 4 阶段工作流
 
 ```
-Phase 1 — Onboarding           Phase 2 — Path proposal
-(diagnose, don't teach)  ──►  (3–7 milestones, learner confirms)
+阶段 1 — Onboarding           阶段 2 — 路径提案
+（先诊断，不教）       ──►   （3–7 个里程碑，学习者确认）
                                          │
                                          ▼
-Phase 4 — Artifact           Phase 3 — Milestone loop
-(demo / cheat sheet /   ◄──  (prime → hypothesize → reveal → verify
- mindmap / flashcards...)     → challenge; lock-in every ~3 turns)
+阶段 4 — 产物            阶段 3 — 里程碑循环
+（demo / cheat sheet /  ◄──  （prime → hypothesize → reveal → verify
+ mindmap / flashcards ...）    → challenge；每 3 轮 lock-in）
 ```
 
-**Phase 1 — Onboarding.** Ask the 3–4 diagnostic questions from [`references/diagnose-playbook.md`](./references/diagnose-playbook.md). Do not teach anything yet, even if the learner's prior understanding is wrong.
+**阶段 1 — Onboarding。** 用 [`references/diagnose-playbook.md`](./references/diagnose-playbook.md) 中的 3–4 个诊断问题起手。**此时不教任何东西**，即使学习者的先前理解是错的。
 
-**Phase 2 — Path proposal.** Based on the diagnosis, propose 3–7 ordered milestones and invite the learner to confirm or swap. This builds co-ownership of the plan.
+**阶段 2 — 路径提案。** 基于诊断结果，给出 3–7 个有序里程碑，让学习者确认或替换。这一步的目的是让学习者**和你共同拥有计划**。
 
-**Phase 3 — Milestone loop.** For each milestone, run the 6-move micro-loop: *prime → hypothesize → reveal + micro-task → verify → challenge*, with a lock-in review roughly every 3 turns.
+**阶段 3 — 里程碑循环。** 每个里程碑走一遍 6 步微循环：*prime → hypothesize → reveal + 微任务 → verify → challenge*，每 ~3 轮做一次 lock-in。
 
-**Phase 4 — Artifact.** Close every session with something the learner produced: a working demo, a cheat sheet in their own words, a mindmap, reflection notes, flashcards, or a teach-back. A session that ends without an artifact mostly evaporates.
+**阶段 4 — 产物。** 每次会话都以学习者产出的东西作为结束：可运行的 demo、自己话写的 cheat sheet、mindmap、反思笔记、flashcards、或者"教回来（teach-back）"。**没有产物的会话几乎等于没学。**
 
 ---
 
-## Repository layout
+## 仓库结构
 
 ```
 learn-x/
-├── SKILL.md                               # The full skill spec — philosophy, rules, workflow
-├── README.md                              # (this file) overview for humans browsing the repo
-├── README.zh-CN.md                        # Chinese translation (auto-generated, see below)
+├── SKILL.md                               # 完整 skill 规范——哲学、规则、工作流
+├── README.md                              # （本文件）中文总览
+├── README-en.md                           # 英文总览
 └── references/
-    ├── diagnose-playbook.md               # Opening moves: question scripts by topic type
-    ├── question-templates.md              # 6 Socratic families (prime / hypothesize / verify / apply / reflect / challenge)
-    └── session-patterns.md                # Adapted workflows for concept / tool / skill / domain / language learning
+    ├── diagnose-playbook.md               # 开场动作：按主题类型的问题脚本
+    ├── question-templates.md              # 6 类 Socratic 模板（prime / hypothesize / verify / apply / reflect / challenge）
+    └── session-patterns.md                # 概念 / 工具 / 技能 / 领域 / 思维习惯 学习的适配工作流
 ```
 
-- **[`SKILL.md`](./SKILL.md)** — Canonical spec. This is the file an AI agent actually loads to operate. Start here if you want to use or port the skill.
-- **[`references/diagnose-playbook.md`](./references/diagnose-playbook.md)** — The first 3–10 minutes of any session. Scripted openings and signals to listen for.
-- **[`references/question-templates.md`](./references/question-templates.md)** — A reusable library of phrasings for each Socratic move. Load when you need variety or want to avoid repetitive wording.
-- **[`references/session-patterns.md`](./references/session-patterns.md)** — How to shape a session differently for concept learning vs. tool onboarding vs. skill building vs. domain knowledge vs. language acquisition.
+- **[`SKILL.md`](./SKILL.md)** — 规范文件。AI agent 真正加载执行的文件。想用或想移植这个 skill 从这里入手。
+- **[`references/diagnose-playbook.md`](./references/diagnose-playbook.md)** — 会话前 3–10 分钟的脚本化开场 + 需要倾听的信号。
+- **[`references/question-templates.md`](./references/question-templates.md)** — 每个 Socratic 动作的可复用措辞库。需要换个问法或避免用词重复时加载。
+- **[`references/session-patterns.md`](./references/session-patterns.md)** — 概念学习 vs. 工具上手 vs. 技能构建 vs. 问题解决 vs. 思维习惯，分别该怎么排会话。
 
 ---
 
-## Anti-patterns
+## 反模式
 
-The skill spec lists these explicitly because they're the most common ways a well-intentioned session still fails:
+skill 规范里明确列了这些反模式，因为这是"好意的会话仍然失败"的最常见原因：
 
-- **Wall-of-text explanations**, even when the learner begs "just tell me".
-- **Empty praise** ("you're so smart!") that trains approval-seeking instead of understanding.
-- **Ignoring what the learner said they wanted** and going off on tangential foundations.
-- **One-size-fits-all pacing** that doesn't flex for a beginner vs. someone experienced in an adjacent field.
-- **No artifact at the end.**
-
----
-
-## Calibration knobs
-
-The framework adapts to the learner, not the other way around:
-
-| Situation | Adjustment |
-|-----------|-----------|
-| Complete beginner | More priming, smaller bites, more restatement, early artifacts |
-| Experienced in adjacent field | Skip basics, lean into challenge questions, faster pacing |
-| Learner says "just tell me" | Negotiate: "after one quick guess, deal?" |
-| Learner goes silent | Drop one rung in abstraction or give a concrete example |
-| Learner argues with your answer | Celebrate it — engage seriously; they may be right |
-| Time-boxed session | Compress milestones; reserve the last 10% for the artifact |
+- **整段灌输式解释**，哪怕学习者求你"直接告诉我就好"。
+- **空洞的表扬**（"你好聪明！"），只会训练出寻求认可的反射，不会带来理解。
+- **无视学习者说过的目标**，绕到无关的基础知识上。
+- **不分对象的统一节奏**，对初学者和已有相邻背景的人用一样的速度。
+- **结尾没有产物。**
 
 ---
 
-## Install
+## 校准旋钮
 
-Via [skills.sh](https://skills.sh) (works for Claude Code, Cursor, Codex, CodeBuddy, OpenCode, and [50+ other agents](https://github.com/vercel-labs/skills#supported-agents)):
+框架是去适配学习者的，不是反过来：
+
+| 情况 | 调整方式 |
+|------|--------|
+| 完全零基础 | 更多 prime、更小粒度、更多复述、更早产物 |
+| 有相邻领域经验 | 跳过基础，加大 challenge，节奏放快 |
+| 学习者说"直接告诉我就好" | 讨价还价："那我们先猜一个，一秒钟就好，好吗？" |
+| 学习者沉默 | 把抽象度降一级，或者举一个具体例子 |
+| 学习者跟你的答案争论 | 鼓励它——认真对待，他可能是对的 |
+| 有时间盒 | 压缩里程碑数量；把最后 10% 留给产物 |
+
+---
+
+## 安装
+
+通过 [skills.sh](https://skills.sh) 安装（支持 Claude Code / Cursor / Codex / CodeBuddy / OpenCode 等 [50+ 种 agent](https://github.com/vercel-labs/skills#supported-agents)）：
 
 ```bash
-# Global install — available across all projects
+# 全局安装 — 所有项目共享
 npx skills add dimayip/learn-x -g -a claude-code
 
-# Project-scoped install — committed with your repo
+# 项目级安装 — 随仓库提交
 npx skills add dimayip/learn-x -a codebuddy
 
-# Other agents: replace -a with your target, e.g. -a cursor / -a codex / -a opencode
+# 其他 agent：-a 后面换成 cursor / codex / opencode 等
 ```
 
-Or clone manually into your agent's skills directory:
+或手动 clone 到 agent 的 skills 目录：
 
 ```bash
-# Example for Claude Code (global)
+# Claude Code（全局）
 git clone https://github.com/dimayip/learn-x ~/.claude/skills/learn-x
 
-# Example for CodeBuddy (project-scoped)
+# CodeBuddy（项目级）
 git clone https://github.com/dimayip/learn-x .codebuddy/skills/learn-x
 ```
 
-Compatible with the [Agent Skills Specification](https://agentskills.io).
+兼容 [Agent Skills Specification](https://agentskills.io)。
 
 ---
 
-## How to use this skill with an AI agent
+## 如何在 AI agent 中使用这个 skill
 
-If your agent platform supports skill loading (CodeBuddy, Claude skills, or similar):
+支持 skill 加载的平台（CodeBuddy / Claude skills 等）：
 
-1. Place this directory under the platform's skills folder (e.g. `.codebuddy/skills/learn-x/`).
-2. The agent loads `SKILL.md` when the user's request matches the skill's description (learning, coaching, "教我 X", etc.).
-3. Reference files under `references/` are loaded **on demand** — the agent pulls them only when it needs the detailed playbook, question phrasings, or pattern guidance for the current moment in the session.
+1. 把整个目录放到平台的 skills 文件夹下（例如 `.codebuddy/skills/learn-x/`）；
+2. 当用户的请求匹配 skill 描述（学习、教练、"教我 X" 等）时，agent 会自动加载 `SKILL.md`；
+3. `references/` 下的文件**按需加载**——agent 只在当前对话真正需要详细脚本、问题措辞或特定场景指引时才读。
 
-If you're using it as a human facilitator: read `SKILL.md` once to internalize the 5 rules, then keep the three reference files open during sessions for quick lookup.
-
----
-
-## Design principles (for anyone forking or adapting this skill)
-
-- **Subject-agnostic first.** Everything in the core spec must work for any X. Topic-specific tuning lives in `references/session-patterns.md`, not in the main rules.
-- **Rules over tips.** The 5 rules are written to be *hard to wiggle out of*. Soft suggestions get ignored under pressure; ironclad rules survive.
-- **References load on demand.** `SKILL.md` stays lean so the agent can hold it in context cheaply; deeper material is opt-in per turn.
-- **Artifact or it didn't happen.** The framework optimizes for *retention*, and the single highest-leverage retention move is producing something externalizable.
+如果你是自己当引导者：完整读一遍 `SKILL.md` 把 5 条规则内化，会话时把三份 reference 文件开在旁边随时查。
 
 ---
 
-## ⭐ Star History
+## 设计原则（给想 fork 或改造这个 skill 的人）
 
-[![Star History Chart](https://api.star-history.com/svg?repos=dimayip/learn-x&type=Date)](https://star-history.com/#dimayip/learn-x&Date)
+- **领域无关优先。** 核心规范里的每一条都必须能对任何 X 适用。主题相关的微调只能放在 `references/session-patterns.md` 里，不能污染主规则。
+- **规则优于建议。** 5 条规则是**难以绕过**的硬规则。软建议会在压力下被忽略；硬规则会幸存。
+- **Reference 按需加载。** `SKILL.md` 保持精简，让 agent 能便宜地持有；更深的材料按轮次 opt-in。
+- **没有产物 = 没学。** 整套框架以**留存**为优化目标，而留存最高杠杆的一招是**产出可带走的东西**。
 
 ---
 
 ## License
 
-Unless noted otherwise in individual files, content in this repository is released under the MIT License. See [`LICENSE`](./LICENSE) if present.
+除非单独文件另有说明，本仓库内容遵循 MIT License。详见 [`LICENSE`](./LICENSE)。
 
 ---
 
 ## Credits
 
-Authored and maintained by [@dimayip](https://github.com/dimayip). The framework synthesizes ideas from Socratic teaching, cognitive load theory, retrieval practice, and the "harness engineering" pattern of separating *steering* from *execution* — but distilled into rules that are cheap enough to actually follow in a real session.
+由 [@dimayip](https://github.com/dimayip) 设计并维护。融合了 Socratic 教学、认知负荷理论、retrieval practice 以及 "harness engineering" 中"掌舵/执行分离"的思路——压缩成一套**在真实会话里跑得动**的规则集。

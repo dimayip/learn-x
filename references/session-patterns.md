@@ -1,197 +1,126 @@
-# Session Patterns — Adapting the Framework to Different Kinds of Learning
+# 会话模式 — 针对不同学习类型适配框架
 
-The 5 disciplines and 6 question families work across all learning, but the
-*shape of a session* should adjust to what's being learned. A session teaching
-someone a new programming language feels very different from one teaching
-them to think statistically, even if both use the same underlying framework.
+5 条硬纪律和 6 族问题模板适用于所有学习，但*会话的形状*应该根据学习的内容来调整。教人一门新编程语言的会话和教人统计思维的会话感觉非常不同，即使两者使用相同的底层框架。
 
-This file describes 5 common learning archetypes and how to adapt the
-framework for each. Load this file when you've diagnosed the learner and you
-need to decide what kind of session to run.
+这份文件描述了 5 种常见的学习原型，以及如何为每种原型适配框架。当你完成了诊断并需要决定运行什么类型的会话时加载此文件。
 
-Match by the *dominant* flavor of the learning goal — many real sessions mix
-types, but one usually leads.
+按学习目标的*主导*风味来匹配——很多真实会话混合了多种类型，但通常有一种在主导。
 
 ---
 
-## Pattern 1 · Concept-heavy learning (understanding *why*)
+## 模式 1 · 概念密集型学习（理解*为什么*）
 
-**Examples:** statistical inference, economic reasoning, design principles,
-distributed-systems consistency models, music theory, recursion.
+**例子：** 统计推断、经济学推理、设计原则、分布式系统一致性模型、乐理、递归。
 
-**Characteristic:** the learner already has vocabulary or can memorize it
-easily; the hard part is building the *mental model* that makes the vocabulary
-mean something.
+**特征：** 学习者已有词汇或能轻松记住它们；难的部分是构建让词汇*有意义*的**心智模型**。
 
-**Session shape:**
-1. Diagnose with a bias toward Q4 (the micro-probe). Definitions are cheap;
-   probes reveal whether the model is really there.
-2. Organize around **invariants and surprises** rather than a list of terms.
-   Start from a simple case the learner can reason about, then introduce one
-   perturbation at a time and ask them to predict what changes.
-3. Heavy use of Hypothesize and Challenge families — concept understanding
-   shows up most clearly in predictions and defenses.
-4. The "micro-task" per turn is usually a *prediction* or an *explanation*,
-   not a build step.
+**会话形状：**
+1. 诊断时偏向 Q4（微探测）。定义很便宜；探测才能揭示模型是否真正存在。
+2. 围绕**不变量和惊喜**来组织，而非术语列表。从学习者能推理的简单情况开始，然后每次引入一个扰动，让他们预测什么会改变。
+3. 大量使用 Hypothesize 和 Challenge 族——概念理解在预测和辩护中最清晰地表现出来。
+4. 每轮的"微任务"通常是一个*预测*或一个*解释*，而非一个构建步骤。
 
-**Product at the end:** often a hand-drawn diagram, a worked example with
-annotations, or a short written explanation in the learner's own words. Ask
-them to produce it — concept learning that isn't externalized doesn't stick.
+**结尾产物：** 通常是一张手绘图、一个带注释的worked example、或一段用学习者自己话写的简短解释。让他们产出它——没有外化的概念学习不会持久。
 
-**Pacing warning:** concept sessions tempt you to "just explain one more
-thing" because you haven't built anything concrete. Resist. Stop at natural
-frontiers and do a Reflect turn even when it feels anticlimactic.
+**节奏警告：** 概念会话诱惑你"再多解释一个东西"，因为你还没构建任何具体的东西。抵抗它。在自然边界处停下来做一个 Reflect 轮次，即使感觉虎头蛇尾。
 
 ---
 
-## Pattern 2 · Skill-heavy learning (building *how*)
+## 模式 2 · 技能密集型学习（构建*怎么做*）
 
-**Examples:** learning a programming language, touch typing, a musical
-instrument, a framework like React, using a command-line tool like Git.
+**例子：** 学一门编程语言、盲打、一种乐器、React 之类的框架、Git 之类的命令行工具。
 
-**Characteristic:** the learner needs reps. Understanding is necessary but
-not sufficient — muscle memory and pattern recognition only come from doing.
+**特征：** 学习者需要反复练习。理解是必要的但不充分——肌肉记忆和模式识别只能从实践中来。
 
-**Session shape:**
-1. Diagnose lightly — for skills, the best diagnosis is "show me what you
-   can already do." Give them a small task at the level you think they're at
-   and watch them do it.
-2. Each turn should include a **micro-build** — something they type, run,
-   try. The ratio should be roughly 70% learner doing / 30% you explaining.
-3. Sequence the builds so each one introduces exactly one new idea. Resist
-   bundling "two tiny things" — they're never as tiny as they look.
-4. Verify happens in the doing, not in the talking. If they can do it, they
-   understand it enough for now.
+**会话形状：**
+1. 轻量诊断——对于技能，最好的诊断是"给我看看你已经能做什么。"给他们一个你认为处于他们水平的小任务，看他们做。
+2. 每轮都应包含一个**微构建**——他们要敲、运行、尝试的东西。比例大约是 70% 学习者在做 / 30% 你在解释。
+3. 排列构建，使得每一个恰好引入一个新想法。抵抗把"两个小东西"打包在一起的诱惑——它们从来没有看起来那么小。
+4. Verify 发生在做的过程中，而非谈话中。如果他们能做到，就说明他们目前理解得足够了。
 
-**Product at the end:** a working artifact — a running program, a completed
-piece of music, a diff they can push. The artifact *is* the evidence.
+**结尾产物：** 一个可运行的产物——一段能跑的程序、一段完成的音乐、一个可以 push 的 diff。产物*本身就是*证据。
 
-**Pacing warning:** skill sessions tempt you to let the learner keep doing
-without stepping back. Every ~3 builds, force a Reflect turn — "what pattern
-have you seen repeating?" — or they'll accumulate tactics without extracting
-principles.
+**节奏警告：** 技能会话诱惑你让学习者一直做下去而不退后一步。每 ~3 个构建后，强制一个 Reflect 轮次——"你看到什么重复出现的模式了？"——否则他们会积累战术而提取不出原则。
 
 ---
 
-## Pattern 3 · Tool or system learning (navigating *what exists*)
+## 模式 3 · 工具/系统学习（导航*存在什么*）
 
-**Examples:** a specific codebase, a product like Figma or Blender, an API,
-a company's internal platform.
+**例子：** 一个特定的代码库、Figma 或 Blender 之类的产品、一个 API、一个公司的内部平台。
 
-**Characteristic:** the learner needs a **map** more than a theory. The
-system has specific affordances, edges, and gotchas that can't be derived
-from first principles — they must be encountered.
+**特征：** 学习者需要一张**地图**而非一套理论。系统有特定的功能提供、边界和坑，这些无法从第一性原理推导出来——它们必须被遭遇。
 
-**Session shape:**
-1. Diagnose heavily around **their actual task**. Tool learning without a
-   task becomes a tour, and tours don't stick. If they don't have a task,
-   co-invent a small realistic one before starting.
-2. Teach just-in-time, by following the task. When the task hits a concept,
-   introduce it; when it doesn't, don't.
-3. Mark the **terra incognita** explicitly — "the system has these 5 major
-   areas; today we'll touch 2 of them; the other 3 are worth knowing exist
-   but we won't go there." This anchors them in the larger geography.
-4. Challenge family becomes "what would happen if" probes into the tool's
-   behavior, not against the learner's reasoning.
+**会话形状：**
+1. 重度围绕**他们的实际任务**来诊断。没有任务的工具学习会变成一次游览，而游览不会留存。如果他们没有任务，在开始之前共同设计一个小的现实任务。
+2. 即时教学，跟着任务走。当任务碰到一个概念时引入它；当没碰到时不引入。
+3. 明确标注**未知领域**——"系统有这 5 个主要区域；今天我们会碰到其中 2 个；另外 3 个值得知道它们存在但我们不会深入。"这让他们锚定在更大的地理版图中。
+4. Challenge 族变成对工具行为的"如果会怎样"探测，而非针对学习者推理的。
 
-**Product at the end:** the task, completed, with a short written
-"gotchas I noticed" list. The list is the durable output; the completed task
-is the evidence.
+**结尾产物：** 任务完成了，加一份简短的"我注意到的坑"列表。列表是持久产出；完成的任务是证据。
 
-**Pacing warning:** tool sessions tempt you to "give the grand tour."
-Grand tours feel impressive and teach nothing. Stay ruthlessly tied to the
-task. Trust that the learner will discover the rest when they need it.
+**节奏警告：** 工具会话诱惑你"做一个全景游览。"全景游览让人印象深刻但什么都教不会。无情地绑定到任务上。相信学习者会在需要时自行发现其余部分。
 
 ---
 
-## Pattern 4 · Problem-solving learning (developing *judgment*)
+## 模式 4 · 问题解决学习（培养*判断力*）
 
-**Examples:** algorithm design, debugging, architectural decisions, medical
-diagnosis, chess tactics, UX design critiques.
+**例子：** 算法设计、调试、架构决策、医学诊断、象棋战术、UX 设计评审。
 
-**Characteristic:** there's no single right answer. The learner needs to
-develop a **process** for approaching open-ended problems and making defensible
-choices among imperfect alternatives.
+**特征：** 没有唯一正确答案。学习者需要发展一个**流程**来处理开放式问题，并在不完美的替代方案中做出可辩护的选择。
 
-**Session shape:**
-1. Diagnose by showing them an example problem and asking them to narrate
-   their approach. The approach is the data — the final answer is almost
-   irrelevant.
-2. Structure around **cases** — 3-5 progressively subtle scenarios. Each
-   case exercises a different axis of the judgment you're building.
-3. Heavy use of Challenge family. The test of judgment is whether it
-   survives probing. Expect to play devil's advocate repeatedly.
-4. The Reflect family is critical here — after each case, ask "what heuristic
-   did you just use, whether you named it or not?" Surfacing tacit heuristics
-   is the core deliverable.
+**会话形状：**
+1. 通过展示一个示例问题并让他们叙述自己的方法来诊断。方法才是数据——最终答案几乎无关紧要。
+2. 围绕**案例**来组织——3–5 个逐渐微妙的场景。每个案例锻炼你正在构建的判断力的一个不同轴。
+3. 大量使用 Challenge 族。判断力的测试是它是否经得起推敲。预计会反复扮演魔鬼代言人。
+4. Reflect 族在这里至关重要——每个案例之后问"你刚才用了什么启发式规则，不管你有没有命名它？"让隐性启发式浮出水面是核心交付物。
 
-**Product at the end:** a written "decision heuristics" list — the rules of
-thumb the learner now carries. 3-7 items, each with a one-line rationale and
-a boundary condition (where it stops applying).
+**结尾产物：** 一份书面的"决策启发式"列表——学习者现在随身携带的经验法则。3–7 条，每条配一句理由和一个边界条件（它在哪里不再适用）。
 
-**Pacing warning:** judgment sessions tempt you to hand out rules. Don't.
-Rules given are forgotten; rules derived are kept. Make the learner articulate
-every heuristic themselves, even if you have to wait in awkward silence.
+**节奏警告：** 判断力会话诱惑你直接递出规则。不要。给出的规则会被遗忘；自己推导出的规则会被保留。让学习者自己表述每一条启发式，即使你不得不在尴尬的沉默中等待。
 
 ---
 
-## Pattern 5 · Mindset or habit learning (changing *how they operate*)
+## 模式 5 · 思维/习惯学习（改变*他们的运作方式*）
 
-**Examples:** learning to think statistically, to write clearly, to code
-defensively, to give feedback well, to plan before coding, to ask better
-questions.
+**例子：** 学会统计思维、学会清晰写作、学会防御性编码、学会给好反馈、学会编码前先规划、学会提更好的问题。
 
-**Characteristic:** the learner intellectually agrees with the advice before
-the session starts. The gap is between knowing and doing. Sessions here are
-less about information and more about **interrupting old patterns**.
+**特征：** 学习者在会话开始之前就已经在理智上同意这个建议了。差距在知道和做到之间。这里的会话与其说是关于信息，不如说是关于**打断旧模式**。
 
-**Session shape:**
-1. Diagnose by finding a recent real example where they did the *old* way.
-   "Tell me about the last time you _{old behavior}_ — what happened?"
-   This is the anchor for the session.
-2. Structure around **pattern interrupts**: show the old pattern, show the
-   new pattern, have the learner practice the new one on the anchor example.
-   Then give them one more example to apply it to.
-3. Almost no new vocabulary or concepts — the learner already has them. The
-   session is about *installing reflexes*.
-4. Reflect family is the main tool. "What tripped you into the old pattern
-   just now?" "What would have caught you earlier?"
+**会话形状：**
+1. 通过找一个他们最近用*旧方式*做事的真实例子来诊断。"跟我说说你上次 _{旧行为}_ 的时候——发生了什么？"这是本次会话的锚点。
+2. 围绕**模式打断**来组织：展示旧模式，展示新模式，让学习者在锚点例子上练习新模式。然后再给一个例子让他们应用。
+3. 几乎没有新词汇或概念——学习者已经有了。会话是关于*安装反射*。
+4. Reflect 族是主要工具。"刚才是什么让你滑入了旧模式？""什么本可以更早抓住你？"
 
-**Product at the end:** a short, personal **checklist or trigger list** the
-learner writes for themselves — 3-5 items max. Not generic advice; specific
-cues tied to their own situations.
+**结尾产物：** 一份简短的、个人化的**检查清单或触发器清单**，由学习者自己为自己写——最多 3–5 条。不是通用建议；是与他们自身情况绑定的具体线索。
 
-**Pacing warning:** mindset sessions tempt you to lecture about the
-importance of the new pattern. Don't. They already agree. The work is
-entirely in the practice turns.
+**节奏警告：** 思维会话诱惑你讲述新模式的重要性。不要。他们已经同意了。工作完全在练习轮次中。
 
 ---
 
-## When a session mixes types
+## 当会话混合多种类型时
 
-Most real sessions blend at least two. A few common combos:
+大多数真实会话至少混合两种。一些常见组合：
 
-| Combo | Lead type | Handling |
-|---|---|---|
-| Concept + Skill (e.g., "learn React hooks") | Skill | Teach concept just-in-time as the builds demand it. Don't front-load theory. |
-| Tool + Skill (e.g., "learn to navigate our codebase") | Tool | Use real tasks; the skill comes from repeated navigation. |
-| Concept + Judgment (e.g., "learn when to use microservices") | Judgment | Concepts are mostly review; spend time on cases. |
-| Skill + Mindset (e.g., "learn test-driven development") | Mindset | The skill is easy; the hard part is the pattern interrupt before writing code. |
+| 组合 | 主导类型 | 处理方式 |
+|------|--------|--------|
+| 概念 + 技能（如"学 React hooks"） | 技能 | 在构建需要时即时教概念。不要前置理论。 |
+| 工具 + 技能（如"学会导航我们的代码库"） | 工具 | 使用真实任务；技能来自反复导航。 |
+| 概念 + 判断力（如"学什么时候用微服务"） | 判断力 | 概念大多是复习；把时间花在案例上。 |
+| 技能 + 思维（如"学测试驱动开发"） | 思维 | 技能很容易；难的部分是写代码之前的模式打断。 |
 
-When in doubt: pick the one that would hurt most if neglected, and let it
-lead. You can always fold the other in opportunistically.
+拿不准时：选那个如果被忽视损失最大的，让它主导。你总是可以伺机把另一种折叠进去。
 
 ---
 
-## Diagnostic cues for picking a pattern
+## 选择模式的诊断线索
 
-If the learner said... | They probably need...
+如果学习者说... | 他们可能需要...
 ---|---
-"I don't really *get* why X works" | Concept-heavy
-"I can read it but I can't write it" | Skill-heavy
-"I need to use X at work next week" | Tool/system
-"I keep picking the wrong approach" | Judgment
-"I know what I should do, I just don't do it" | Mindset
+"我不太*理解* X 为什么有效" | 概念密集型
+"我能读懂但写不出来" | 技能密集型
+"下周工作要用 X" | 工具/系统型
+"我总是选错方法" | 判断力型
+"我知道该怎么做，就是做不到" | 思维/习惯型
 
-These aren't exclusive — listen for which *feeling* is strongest in their
-description, and let it shape the session even if other elements exist.
+这些不是互斥的——听他们描述中哪种*感觉*最强烈，让它塑造会话，即使其他元素也存在。

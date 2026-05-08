@@ -1,212 +1,154 @@
-# Question Templates — 6 Families of Socratic Prompts
+# 问题模板 — 6 族 Socratic 提问
 
-This file is a reference library. Load it when you need concrete phrasings for
-a specific moment in a learning session. You are not required to use these
-verbatim — adapt to the learner's tone, level, and the topic's texture. But the
-*shapes* here encode tested pedagogy, so deviate consciously rather than by
-accident.
+这份文件是一个参考库。当你在学习会话的特定时刻需要具体措辞时加载它。你不必逐字使用——请根据学习者的语气、水平和主题的质感来调整。但这里的*形态*编码了经过验证的教学法，所以偏离时请有意识地偏离，而非无意识地偏离。
 
-Each family answers a different teaching intent. Match the family to the
-moment you're in, not to the topic.
+每一族对应一个不同的教学意图。根据你所处的*时刻*来匹配族，而非根据主题。
 
 ---
 
-## Family 1 · Priming — "Activate what they already know"
+## 第 1 族 · Priming（激活） — "激活他们已有的知识"
 
-**Use when:** Session just started, or a new major section is about to begin.
-**Why it works:** New knowledge sticks to existing scaffolding. If you don't
-find the scaffolding first, the new concept hangs in mid-air and gets
-forgotten within a day.
+**何时使用：** 会话刚开始，或一个新的大板块即将开始。
+**为什么有效：** 新知识需要附着在已有的脚手架上。如果你不先找到脚手架，新概念就悬在半空中，一天之内就被遗忘。
 
-**Templates:**
+**模板：**
 
-- "Before we touch X, have you ever run into a situation where _{analog from
-  daily life}_? How did you deal with it back then?"
-- "What's your current mental image of X? Even if it's hazy or you think it's
-  wrong — I want to hear it so I know where to start."
-- "Tell me about the last time you saw X mentioned — in a doc, a talk, a
-  conversation. What stuck with you? What felt confusing?"
-- "If you had to explain X to a friend right now with no prep, what would you
-  say? (Don't worry about being right — I want the raw version.)"
+- "在我们碰 X 之前，你有没有遇到过 _{来自日常生活的类比}_ 的情况？你当时怎么处理的？"
+- "你目前对 X 的心理画面是什么？哪怕模糊或者你觉得可能是错的——我想听到它，这样我知道从哪里开始。"
+- "跟我说说你上次看到 X 被提及的时候——在文档、演讲、对话里。什么东西留下了印象？什么让你困惑？"
+- "如果你现在要毫无准备地跟朋友解释 X，你会怎么说？（不用担心对不对——我要的是原始版本。）"
 
-**Anti-pattern:** "Do you know what X is?" — this is a yes/no question and
-tells you nothing. Always ask for *content*, not existence.
+**反模式：** "你知道什么是 X 吗？"——这是一个是/否问题，什么都告诉你不了。永远要求*内容*，而非存在性。
 
 ---
 
-## Family 2 · Hypothesize — "Make them guess before you reveal"
+## 第 2 族 · Hypothesize（假设） — "让他们在揭示之前先猜"
 
-**Use when:** You're about to introduce a new concept, rule, or answer.
-**Why it works:** A guess — even a wrong one — primes the brain to notice
-what's surprising about the real answer. Pure reveal wastes that attention.
+**何时使用：** 你即将引入一个新概念、规则或答案。
+**为什么有效：** 一个猜测——即使是错误的——会让大脑准备好注意到真实答案中令人惊讶的部分。纯粹的揭示浪费了这份注意力。
 
-**Templates:**
+**模板：**
 
-- "Given what you just said, what would you *guess* happens when _{scenario}_?
-  Here are three plausible options:
-  A. _{plausible but wrong}_
-  B. _{correct}_
-  C. _{plausible but wrong in a different way}_
-  Which one feels right, and why?"
-- "Before I show you the answer: imagine you had to design this yourself. What
-  approach would you take?"
-- "If X behaves like Y (which you already know), what would you predict about
-  _{edge case}_?"
+- "根据你刚才说的，你*猜*当 _{场景}_ 发生时会怎样？这里有三个合理选项：
+  A. _{合理但错误}_
+  B. _{正确}_
+  C. _{用另一种方式合理但错误}_
+  哪个感觉对，为什么？"
+- "在我揭示答案之前：假设你自己要设计这个东西，你会用什么方法？"
+- "如果 X 的行为像 Y（你已经知道的），你会对 _{边缘情况}_ 做什么预测？"
 
-**Note on distractors:** The wrong options should be *plausible*. If option A
-is obviously silly, the learner doesn't have to think — they just pick B by
-elimination. Good distractors represent real misconceptions learners have.
+**关于干扰项的说明：** 错误选项应该是*合理的*。如果选项 A 明显荒谬，学习者不需要思考——他们只是通过排除法选 B。好的干扰项代表学习者真实存在的误解。
 
 ---
 
-## Family 3 · Verify — "Check they actually got it, not just nodded"
+## 第 3 族 · Verify（验证） — "确认他们真的懂了，不只是点了头"
 
-**Use when:** You've just explained or demonstrated a concept.
-**Why it works:** Nodding is cheap. Paraphrasing in one's own words is the
-minimum bar for real understanding. Applying it to a slightly different case
-is the proof.
+**何时使用：** 你刚解释或演示了一个概念。
+**为什么有效：** 点头很便宜。用自己的话复述是真正理解的最低门槛。把它应用到一个稍微不同的场景是证明。
 
-**Templates:**
+**模板：**
 
-- "In your own words — not mine — what's the core of X? Pretend I've never
-  heard of it."
-- "What's the one-sentence version of what we just covered?"
-- "What's the difference between X and _{closely related concept}_? This is
-  the question that usually trips people up, so take your time."
-- "If I asked you to teach this to someone tomorrow, what would you make sure
-  to mention first?"
+- "用你自己的话——不是我的——X 的核心是什么？假装我从没听说过它。"
+- "我们刚覆盖的内容，一句话版本是什么？"
+- "X 和 _{紧密相关的概念}_ 之间的区别是什么？这个问题通常会绊倒人，慢慢来。"
+- "如果我让你明天教别人这个主题，你会确保先提到什么？"
 
-**Diagnostic tip:** If the learner's paraphrase uses mostly your words, they
-haven't absorbed it yet. Push back gently: "That's close to what I said —
-try it again using only words you'd use with a friend."
+**诊断提示：** 如果学习者的复述主要用了你的词，他们还没有吸收。温和地推回去："那和我说的差不多——试着用你和朋友说话时会用的词再来一遍。"
 
 ---
 
-## Family 4 · Apply — "Transfer to new terrain"
+## 第 4 族 · Apply（应用） — "迁移到新地形"
 
-**Use when:** Verify passed, and you need to confirm the understanding
-generalizes.
-**Why it works:** Understanding that can't transfer is memorization. A new
-scenario forces the learner to extract the *principle* from the example.
+**何时使用：** Verify 通过了，你需要确认理解能泛化。
+**为什么有效：** 不能迁移的理解只是记忆。一个新场景迫使学习者从示例中提取*原则*。
 
-**Templates:**
+**模板：**
 
-- "Here's a situation we haven't talked about: _{genuinely new scenario}_.
-  How would you apply what we just learned?"
-- "Given this new constraint _{constraint}_, what changes in your approach?"
-- "If I swap _{component A}_ for _{component B}_, does your answer still
-  work? What needs to change?"
-- "Can you come up with your own example where this would apply — from your
-  own work or life?"
+- "这里有一个我们没讨论过的场景：_{全新的场景}_。你会怎么应用我们刚学到的？"
+- "加一个新约束 _{约束}_，你的方法有什么变化？"
+- "如果我把 _{组件 A}_ 换成 _{组件 B}_，你的答案还成立吗？什么需要改变？"
+- "你能想出一个你自己的例子，说明这个概念会在哪里适用——来自你自己的工作或生活？"
 
-**The highest bar:** ask the learner to *generate their own example*. This
-proves the concept has entered their active toolkit, not just their
-recognition memory.
+**最高标准：** 让学习者*自己生成一个例子*。这证明了概念已经进入了他们的主动工具箱，而不仅仅是识别记忆。
 
 ---
 
-## Family 5 · Reflect — "Make the thinking visible"
+## 第 5 族 · Reflect（反思） — "让思考过程可见"
 
-**Use when:** The learner got something wrong, took a long detour, or just
-finished a non-trivial chunk.
-**Why it works:** Metacognition — thinking about one's own thinking — is what
-turns individual lessons into durable skill. Without it, learners repeat the
-same class of mistake forever.
+**何时使用：** 学习者答错了、走了一段弯路、或刚完成一大块内容。
+**为什么有效：** 元认知——对自己思考的思考——是把单次课程转化为持久技能的东西。没有它，学习者会永远重复同一类错误。
 
-**Templates:**
+**模板：**
 
-- "You arrived at the right answer, but let's trace it back: at what moment
-  did the key insight click? What was the trigger?"
-- "Earlier you went down _{dead-end path}_ before course-correcting. Looking
-  back, what signal could have told you sooner?"
-- "What's the *type* of mistake that was? If you see a similar shape next
-  week, what would you watch for?"
-- "Which part of this still feels wobbly to you? Where would a slightly
-  harder version trip you up?"
-- "If you were the teacher for someone learning this, what would you warn
-  them about?"
+- "你得出了正确答案，但让我们追溯一下：关键洞察是在什么时刻 click 的？触发器是什么？"
+- "之前你走了 _{死胡同路径}_ 然后纠正了方向。回头看，什么信号本可以更早告诉你？"
+- "那是什么*类型*的错误？如果下周你看到类似的形状，你会留意什么？"
+- "哪部分你觉得还不太稳？在哪里一个稍难一点的版本会绊倒你？"
+- "如果你是教别人学这个的老师，你会警告他们什么？"
 
-**Tone note:** Reflect questions can feel like an exam if delivered dryly.
-Phrase them curiously, not forensically — you're a collaborator investigating
-the learner's mind, not an auditor grading it.
+**语气说明：** Reflect 问题如果语气干巴巴会让人感觉像考试。用好奇的方式表达，而非法医式的——你是一个协作者在探索学习者的思维，不是一个审计员在打分。
 
 ---
 
-## Family 6 · Challenge (Devil's Advocate) — "Prevent false confidence"
+## 第 6 族 · Challenge（追问 / 魔鬼代言人） — "防止虚假自信"
 
-**Use when:** Learner got it right, maybe even elegantly. They look pleased.
-**Why it works:** Premature closure is the enemy of deep understanding. A
-well-aimed challenge reveals whether they understand the *why*, or only the
-*what*.
+**何时使用：** 学习者答对了，也许还很优雅。他们看起来很得意。
+**为什么有效：** 过早封闭是深层理解的敌人。一个精准的追问揭示他们到底理解的是*为什么*，还是只理解了*是什么*。
 
-**Templates:**
+**模板：**
 
-- "Okay, you nailed it. But suppose a skeptic says _{specific objection}_ —
-  how would you answer?"
-- "Great. Now: what's the strongest case *against* what you just concluded?"
-- "Your approach works here. Where does it break? Every method has a failure
-  mode — what's yours?"
-- "You picked A. Someone else might reasonably pick B. What would their
-  argument look like, and why are you still confident in A?"
-- "If I told you your answer is right for the wrong reason, where would you
-  look first?"
+- "好，你答对了。但假设一个怀疑论者说 _{具体反对意见}_——你怎么回应？"
+- "很好。现在：反对你刚得出结论的*最强论据*是什么？"
+- "你的方法在这里有效。它在哪里会崩溃？每个方法都有失效模式——你的是什么？"
+- "你选了 A。别人可能合理地选 B。他们的论据会是什么样的，为什么你仍然对 A 有信心？"
+- "如果我告诉你你的答案是对的但理由是错的，你会先检查哪里？"
 
-**Critical caveat:** Don't challenge every correct answer — that becomes
-exhausting and trains the learner to distrust their own instincts. Reserve
-this family for:
-1. The pivotal concepts of the session (the ones they'll build on).
-2. Moments when their confidence seems higher than their evidence warrants.
-3. Transitions between sections, as a natural stress-test.
+**关键注意事项：** 不要对每个正确答案都追问——那会变得精疲力竭，训练学习者不信任自己的直觉。把这一族保留给：
+1. 本次会话的枢纽概念（他们将在其上继续构建的）。
+2. 他们的自信看起来高于证据所支持的时刻。
+3. 板块之间的过渡，作为自然的压力测试。
 
 ---
 
-## Choosing across families — a cheat sheet
+## 跨族选择 — 速查表
 
-| Moment in session | Family to reach for |
+| 会话中的时刻 | 应该用哪一族 |
 |---|---|
-| Session just opened | Priming |
-| Section just opened | Priming (lighter) |
-| About to reveal a new fact | Hypothesize |
-| Just finished explaining | Verify |
-| Verify passed cleanly | Apply |
-| Stuck / confused | Reflect (gentle version) |
-| Got it wrong | Reflect (diagnostic) |
-| Got it right, pivotal concept | Challenge |
-| Natural pause between chunks | Reflect → Challenge combo |
-| End of session | Reflect (zoom out) |
+| 会话刚开始 | Priming |
+| 板块刚开始 | Priming（轻量版） |
+| 即将揭示新事实 | Hypothesize |
+| 刚解释完 | Verify |
+| Verify 通过了 | Apply |
+| 卡住了 / 困惑了 | Reflect（温和版） |
+| 答错了 | Reflect（诊断式） |
+| 答对了，枢纽概念 | Challenge |
+| 块与块之间的自然停顿 | Reflect → Challenge 组合 |
+| 会话结束 | Reflect（拉远视角） |
 
 ---
 
-## A/B/C/D prompt construction — the micro-pattern
+## A/B/C/D 选项构造 — 微模式
 
-Many templates above use multiple choice. Here's the construction recipe:
+上面许多模板使用了多选。这里是构造配方：
 
-1. **Identify the real answer.** Make sure you know *why* it's right, not just
-   that it is.
-2. **Find 2-3 real misconceptions.** Draw from: common novice mistakes, overly
-   literal readings, confusions with adjacent concepts.
-3. **Phrase each option at similar length.** If option B is three words and A
-   and C are full sentences, learners pattern-match to "the short one is
-   suspicious" instead of thinking.
-4. **Always require a "why".** Never accept just "I pick B." Always: "B,
-   because _{reason}_." The reason is what you grade.
+1. **确认真正的答案。** 确保你知道它*为什么*是对的，而不仅仅是它是对的。
+2. **找到 2–3 个真实的误解。** 来源：常见新手错误、过于字面的理解、与相邻概念的混淆。
+3. **每个选项措辞长度相近。** 如果选项 B 是三个字而 A 和 C 是完整句子，学习者会模式匹配"短的那个可疑"而不是思考。
+4. **永远要求"为什么"。** 永远不接受只是"我选 B。"必须是："B，因为 _{原因}_。" 理由才是你评估的东西。
 
-**Example — badly constructed:**
-> Which sorts an array fastest on average?
-> A. Bubble sort
-> B. Quicksort
-> C. Wait for the hardware to get faster
+**构造不佳的例子：**
+> 平均情况下哪个排序最快？
+> A. 冒泡排序
+> B. 快速排序
+> C. 等硬件变快
 
-(C is a joke; A is obviously wrong to anyone who's seen these names. B is
-picked by elimination, not understanding.)
+（C 是一个笑话；A 对见过这些名字的人来说明显错误。B 是通过排除选出的，不是通过理解。）
 
-**Example — well constructed:**
-> For sorting 10 million mostly-sorted integers, which is likely fastest in
-> practice?
-> A. Quicksort (classic textbook choice)
-> B. Mergesort (guaranteed O(n log n))
-> C. Insertion sort (O(n²) worst case but very low constant)
-> D. Timsort (hybrid used by Python/Java stdlibs)
+**构造良好的例子：**
+> 对 1000 万个基本有序的整数排序，实际中哪个可能最快？
+> A. 快速排序（经典教科书选择）
+> B. 归并排序（保证 O(n log n)）
+> C. 插入排序（最坏 O(n²) 但常数因子很小）
+> D. Timsort（Python/Java 标准库使用的混合排序）
 
-Now every option has real merit in some context; the learner has to reason
-about *which context this is*, which is the actual skill.
+现在每个选项在某个上下文中都有真实价值；学习者必须推理*这是哪个上下文*，这才是真正的技能。
